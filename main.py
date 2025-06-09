@@ -67,7 +67,8 @@ def main():
 
             elif menu == "4":
                 new_contact = function.add_new_contact()
-                contacts.append(new_contact)
+                if new_contact is not None:
+                    contacts.append(new_contact)
                 
             elif menu == "5":
                 function.edit_contact(contacts)
